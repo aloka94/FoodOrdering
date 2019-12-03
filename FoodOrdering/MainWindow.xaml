@@ -1,0 +1,125 @@
+﻿<Window x:Class="FoodOrdering.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodOrdering.Classes"    
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        mc:Ignorable="d"
+        Title="Staff Window" Height="580" Width="950"
+        FlowDirection="LeftToRight">
+    <Grid>
+        <Grid.Resources>
+            <local:Bool2String x:Key="cB2S"/>
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="317*"/>
+            <ColumnDefinition Width="625*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+
+            <RowDefinition Height="639*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="40,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Enter food item name to filter" VerticalAlignment="Top" Height="18" Width="200"/>
+        <TextBox x:Name="Tbx_filter" HorizontalAlignment="Left" Height="23" Margin="40,38,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" TextChanged="Tbx_filter_TextChanged"/>
+        <ListBox x:Name="Lbx_fooditems" HorizontalAlignment="Left"  Margin="40,80,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" MaxHeight="320"  SelectionChanged="Lbx_fooditems_SelectionChanged" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <Run Text="{Binding name}" FontWeight="Bold"/>
+                    </TextBlock>
+                </DataTemplate>
+
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1" Margin="10,35,266,10" Orientation="Vertical" Grid.Row="1" DataContext="{Binding ElementName=Lbx_fooditems, Path=SelectedItem}">
+            <StackPanel Orientation="Horizontal" Height="46">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Item Name" VerticalAlignment="Top" Height="20" Width="123"/>
+                <TextBox x:Name="Tbx_itemname" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Top" Width="200" TextChanged="Tbx_TextChanged" />
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="43">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" Height="20" Width="123"/>
+                <ComboBox x:Name="Cbx_category" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Text="{Binding category}" IsSynchronizedWithCurrentItem="True" SelectionChanged="Cbx_SelectionChanged">
+
+                    <ComboBoxItem Content="Appetizers"></ComboBoxItem>
+                    <ComboBoxItem Content="Main Menu"></ComboBoxItem>
+                    <ComboBoxItem Content="Combos"></ComboBoxItem>
+                    <ComboBoxItem Content="Drinks"></ComboBoxItem>
+                    <ComboBoxItem Content="Desserts"></ComboBoxItem>
+                </ComboBox>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="174" HorizontalAlignment="Left" Width="349">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="20" Width="123"/>
+                <TextBox x:Name="Tbx_desc" HorizontalAlignment="Left" Height="152" TextWrapping="Wrap" Text="{Binding description}" VerticalAlignment="Top" Width="200" TextChanged="Tbx_TextChanged" VerticalScrollBarVisibility="Auto"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Height="20" Width="123"/>
+                <TextBox x:Name="Tbx_price" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="{Binding price}" VerticalAlignment="Top" Width="180" TextChanged="Tbx_TextChanged"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="10,0,0,0" Text="€" FontSize="15" VerticalAlignment="Top" Height="20" Width="20"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="20" Width="123"/>
+                <TextBox x:Name="Tbx_qty" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="{Binding quantity}" VerticalAlignment="Top" Width="200" TextChanged="Tbx_TextChanged"/>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Height="42">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Availability" VerticalAlignment="Top" Height="20" Width="123"/>
+                <ComboBox x:Name="Cbx_availability" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Text="{Binding isAvailable,  Converter= {StaticResource cB2S}}" SelectionChanged="Cbx_SelectionChanged">
+                    <ComboBoxItem Content="Available" IsSelected="True"></ComboBoxItem>
+                    <ComboBoxItem Content="Not Available"></ComboBoxItem>
+                </ComboBox>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="33">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Veg/Non veg" VerticalAlignment="Top" Height="20" Width="123" />
+                <ComboBox x:Name="Cbx_veg" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Text="{Binding foodType}" SelectionChanged="Cbx_SelectionChanged">
+                    <ComboBoxItem Content="Veg"></ComboBoxItem>
+                    <ComboBoxItem Content="Non-Veg" IsSelected="True"></ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Margin="40,414,75,40" Orientation="Horizontal" Grid.Row="1">
+            <Button x:Name="Btn_delete" Content="Delete item" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="Btn_delete_Click" Height="28" />
+            <Button x:Name="Btn_add" Content="Add item" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="Btn_add_Click" Margin="49,0,0,0" Height="28"/>
+        </StackPanel>
+
+
+
+
+
+        <Button Height="200" HorizontalAlignment="Left" x:Name="Btn_Image" VerticalAlignment="Top" DataContext="{Binding ElementName=Lbx_fooditems, Path=SelectedItem}"
+                Width="221" Click="Btn_Image_Click" Background="Transparent" Margin="364,35,0,0" Grid.Row="1" Grid.Column="1" BorderBrush="Transparent">
+
+
+            <Image Source="{Binding imagePath}" x:Name="Img_load" Stretch="Uniform" Width="200" Height="200"/>
+
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Height="75" Grid.Row="0" TextWrapping="Wrap" Text="" Background="Crimson" VerticalAlignment="Top" Width="950" Grid.ColumnSpan="2" Margin="0,0,-8,0" Grid.RowSpan="2">
+            <StackPanel Orientation="Horizontal">   
+                <Button Click="Btn_home_Click" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="80" Width="108" Background="Transparent" ToolTip="Click for Customer Window">           
+                    <Image  Source="pack://application:,,,/Food Images/Logo1.png"  Stretch="Uniform"   />
+                    </Button>
+
+                <TextBlock Text="Burger Man" FontSize="40" Foreground="White" Margin="1,10,448,10" FontFamily="{StaticResource CustomFont}" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="2" Background="Crimson" Width="319"/>
+            
+                </StackPanel>
+ 
+        
+
+        </TextBlock>
+
+
+
+    </Grid>
+</Window>

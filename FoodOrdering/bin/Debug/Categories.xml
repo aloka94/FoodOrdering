@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<ArrayOfCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Category>
+    <categoryId>1</categoryId>
+    <category>Appetizers</category>
+    <foodItems>
+      <FoodItem>
+        <foodId>1</foodId>
+        <name>Veg crispy burger</name>
+        <description>Mixed veg patty with indian spices. *Contains traces of nuts</description>
+        <quantity>15</quantity>
+        <price>3</price>
+        <isAvailable>true</isAvailable>
+        <foodType>veg</foodType>
+        <category>
+          <categoryId>1</categoryId>
+          <category>Appetizer</category>
+          <foodItems />
+        </category>
+        <addOns>
+          <AddOn>
+            <addOnId>1</addOnId>
+            <addOnName>Sauce</addOnName>
+            <addOnPrice>1.32</addOnPrice>
+          </AddOn>
+        </addOns>
+      </FoodItem>
+    </foodItems>
+  </Category>
+  <Category>
+    <categoryId>2</categoryId>
+    <category>Main Menu</category>
+    <foodItems>
+      <FoodItem>
+        <foodId>2</foodId>
+        <name>Smoked Chicken burger</name>
+        <description>Burger with smoked chicken patty *contains dairy</description>
+        <quantity>20</quantity>
+        <price>4.45</price>
+        <isAvailable>true</isAvailable>
+        <foodType>non-veg</foodType>
+        <category>
+          <categoryId>2</categoryId>
+          <category>Main Menu</category>
+          <foodItems />
+        </category>
+        <addOns>
+          <AddOn>
+            <addOnId>1</addOnId>
+            <addOnName>Sauce</addOnName>
+            <addOnPrice>1.32</addOnPrice>
+          </AddOn>
+        </addOns>
+      </FoodItem>
+    </foodItems>
+  </Category>
+  <Category>
+    <categoryId>3</categoryId>
+    <category>Combos</category>
+    <foodItems />
+  </Category>
+  <Category>
+    <categoryId>4</categoryId>
+    <category>Drinks</category>
+    <foodItems />
+  </Category>
+  <Category>
+    <categoryId>5</categoryId>
+    <category>Desserts</category>
+    <foodItems />
+  </Category>
+</ArrayOfCategory>

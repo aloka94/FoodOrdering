@@ -1,0 +1,12 @@
+﻿<Application x:Class="FoodOrdering.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FoodOrdering"
+             StartupUri="CustomerMainWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="CustomFont">pack://application:,,,/Fonts/#hollen amare sans
+        </FontFamily>
+        <FontFamily x:Key="Category">pack://application:,,,/Fonts/#Hot Pizza
+        </FontFamily>
+    </Application.Resources>
+</Application>

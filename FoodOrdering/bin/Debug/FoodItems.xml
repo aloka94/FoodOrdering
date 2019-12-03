@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<ArrayOfFoodItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FoodItem>
+    <foodId>2</foodId>
+    <name>Smoked Chicken burger</name>
+    <description>Burger with smoked chicken patty *contains dairy</description>
+    <quantity>20</quantity>
+    <price>4.45</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\smoked chicken burger.jpg</imagePath>
+    <addOns>
+      <AddOn>
+        <addOnId>1</addOnId>
+        <addOnName>Sauce</addOnName>
+        <addOnPrice>1.32</addOnPrice>
+      </AddOn>
+    </addOns>
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Cheese Burger - XL</name>
+    <description>bla bla</description>
+    <quantity>0</quantity>
+    <price>5</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\cheese burger.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Vanilla Softie(chocolate)</name>
+    <description>ice cream</description>
+    <quantity>0</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>@\..\Food Images\dessert1.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Youghurt parfait</name>
+    <description>Contains diary</description>
+    <quantity>0</quantity>
+    <price>4</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>@\..\Food Images\d2.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Soya Burger - L</name>
+    <description>Soya Patty. Contains nuts</description>
+    <quantity>0</quantity>
+    <price>5</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>@\..\Food Images\veg.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Chicken burger combo 1 </name>
+    <description>Chicken burger with one large french fries, coke and 2 chocolate chip cookies</description>
+    <quantity>0</quantity>
+    <price>8</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Combos</category>
+    <imagePath>@\..\Food Images\combo1.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Chilli Chicken rice bowl</name>
+    <description>Rice with indian spices served with chicken pieces. </description>
+    <quantity>5</quantity>
+    <price>8</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\mm1.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Kids combo</name>
+    <description>Combo of chicken fingers with dip. Includes a toy</description>
+    <quantity>0</quantity>
+    <price>4</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Combos</category>
+    <imagePath>@\..\Food Images\combo2.png</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Taco Combo box</name>
+    <description>Combo of taco, chicken popcorn, coke</description>
+    <quantity>1</quantity>
+    <price>9</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Combos</category>
+    <imagePath>@\..\Food Images\combo4.png</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>French fries - L</name>
+    <description>Finger chips made of potatoes</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>@\..\Food Images\french fries.png</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Chicken nuggets - S</name>
+    <description>Chicken nuggets</description>
+    <quantity>1</quantity>
+    <price>2</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>@\..\Food Images\nuggets small.png</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Crispy Veg Burger - XL</name>
+    <description>Crispy veg burger with indian spices. Contains nuts.</description>
+    <quantity>1</quantity>
+    <price>6</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\18803_el_gigante_product_preview.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Apple cake with streusel</name>
+    <description>A "sunken apple cake" is the fastest in the preparation. Our apple cake with crumble, on the other hand, needs a little more time. If you lead your cake fork to the mouth, but you will sink too - in the enjoyment of the finest shortcrust pastry, fruity apple filling, raisins and butter crumbles. Contained allergens : eggs, Milk (including lactose), Gluten-containing cereals: wheat</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>@\..\Food Images\2321_apfelkuchen.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Chocolate Cake</name>
+    <description>However, who eats it, quickly realizes that this delicious chocolate cake just indescribably delicious tastes. To all who lack words with so much enjoyment, the truism is a sweet consolation: connoisseurs enjoy and remain silent. Contained allergens : eggs, Milk (including lactose), Gluten-containing cereals: wheat, soy</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>@\..\Food Images\90_schokoladen_kuchen.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Rainbow donut</name>
+    <description>The most beautiful colors of the rainbow, loose yeast dough and fruity raspberry filling. Done is our exclusive, new Rainbow Donut. Contained allergens : eggs, Milk (including lactose), Gluten-containing cereals: wheat, soy</description>
+    <quantity>1</quantity>
+    <price>2</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>..\..\Food Images\18406_rainbow_donut.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Caramel Sundae</name>
+    <description>Caramel Sundae with caramel sauce</description>
+    <quantity>1</quantity>
+    <price>1</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>..\..\Food Images\2333_mcsundae_mit_karamellsauce.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Sweet chilli chicken burger - XL</name>
+    <description>Sweet chilli burger with double chicken patty</description>
+    <quantity>1</quantity>
+    <price>4</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>..\..\Food Images\17910_doppel-chickenburger_sweet-chili.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Nachos with cheese</name>
+    <description>Nachos with mexican topping</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\nachos.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Mexican chili burger</name>
+    <description>Mexican beef burger</description>
+    <quantity>1</quantity>
+    <price>3.5</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Main Menu</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\18808_mexican_chili_burger.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Apple Kiwi smoothie</name>
+    <description>Chilled apple kiwi smoothie. Contains dairy.</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Drinks</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\18211_iced_fruit_smoothie_apfel-kiwi.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Mango Pineapple drink</name>
+    <description>Mango and pineapple. Contains dairy.</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Drinks</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\8321_iced_fruit_smoothie_mango_ananas.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Apple juice</name>
+    <description>Bottled Apple juice</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Drinks</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\apple juice.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Caesar Salad - L</name>
+    <description>Caesar Salad with lettuce, tomatoes and chicken</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\12212_big_caesar_chicken_salad_product_preview.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Chilli Cheese Snackers</name>
+    <description>Cheesy bites with herbs</description>
+    <quantity>1</quantity>
+    <price>2</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\18521_5_chili_cheese_snackers_product_preview.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Raspberry Cheesecake</name>
+    <description>Raspberry Cheesecake</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\18404_himbeer_cheesecake.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Sprite - L</name>
+    <description>Sprite - L</description>
+    <quantity>1</quantity>
+    <price>2</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Drinks</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\42_sprite.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Apple Puff</name>
+    <description>Apple Puff</description>
+    <quantity>1</quantity>
+    <price>1</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\2335_heisse_apfeltasche.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Cold Coffee - M</name>
+    <description>Cold Coffee - M</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Drinks</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\Coldcoffee.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Strawberry smoothie</name>
+    <description>Strawberry smoothie</description>
+    <quantity>1</quantity>
+    <price>2</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Veg</foodType>
+    <category>Drinks</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\smoothie.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Chicken Wings - 6 pcs</name>
+    <description>Chicken Wings 6 pieces. Contains gluten.</description>
+    <quantity>1</quantity>
+    <price>3</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Appetizers</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\10007_5_chicken_wings_product_preview.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+  <FoodItem>
+    <foodId>0</foodId>
+    <name>Cheesecake Muffin</name>
+    <description>contains eggs, dairy</description>
+    <quantity>1</quantity>
+    <price>2</price>
+    <isAvailable>true</isAvailable>
+    <foodType>Non-Veg</foodType>
+    <category>Desserts</category>
+    <imagePath>C:\Users\aloka\source\repos\FoodOrdering\FoodOrdering\Food Images\18405_himbeer-cheesecake_muffin.jpg</imagePath>
+    <addOns />
+    <visibilityAdd>Visible</visibilityAdd>
+    <visibility>Collapsed</visibility>
+  </FoodItem>
+</ArrayOfFoodItem>
